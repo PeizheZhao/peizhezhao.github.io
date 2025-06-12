@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Peizhe Zhao (赵培喆)"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
+description              : "Focusing on computer vision, machine learning, human-computer interaction and cybersecurity."
 repository               : "PeizheZhao/peizhezhao.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Peizhe Zhao (赵培喆)"
-  avatar           : "images/android-chrome-512x512.png"
+  avatar           : "images/avatar.png"
   bio              : "Nanjing University of Information Science and Technology"
   location         : "Nanjing, China"
   employer         :
