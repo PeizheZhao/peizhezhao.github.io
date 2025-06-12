@@ -27,26 +27,6 @@ My research interest includes computer vision and deep learning applications. I 
 
 # 📝 Publications 
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-      <div class="badge">arXiv 2025</div>
-      <img src="images/yolov11_fabric.png" alt="sym" style="width: 500px; height: 300px; object-fit: cover;">
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-    [SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
-
-    **Peizhe Zhao**
-
-    [**Project**](https://doi.org/10.48550/arXiv.2502.01445)
-    - Proposed innovative modules based on YOLOv11 architecture for fabric defect detection
-    - Curated comprehensive fabric defect dataset for model training and evaluation
-
-    - [Tennis Match Prediction Model Based on Deep Learning and Multi-Source Information Fusion](https://ieeexplore.ieee.org/xpl/conhome/1837904/all-proceedings), Second author, ICBAIE 2024
-    - [Athlete Performance Analysis: Machine Learning for Predicting Tennis Player Scores](https://doi.org/10.1109/CISCE62493.2024.10653354), First author, IEEE CISCE 2024
-  </div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv version</div><img src="images/yolov11_fabric.png" alt="sym" style="width: 500px; height: 300px; object-fit: cover;"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -58,6 +38,25 @@ My research interest includes computer vision and deep learning applications. I 
 <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Proposed innovative modules based on YOLOv11 architecture for fabric defect detection 
 </div>
+</div>
+
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
+            <div class="badge">arXiv version</div>
+            <img src="images/yolov11_fabric.png" alt="sym" style="width: 500px; height: 300px; object-fit: cover;">
+        </div>
+    </div>
+    <div class='paper-box-text' markdown="1">
+
+[SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
+
+ **Peizhe Zhao**
+
+[**Project**](https://doi.org/10.48550/arXiv.2502.01445) 
+<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Proposed innovative modules based on YOLOv11 architecture for fabric defect detection 
+    </div>
 </div>
 
 # 🎖 Honors and Awards
