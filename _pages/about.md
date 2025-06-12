@@ -29,10 +29,11 @@ My research interest includes computer vision and deep learning applications. I 
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <img src="images/yolov11_fabric.png" alt="sym" style="width: 250px; height: 150px; object-fit: cover;">
+    <div>
+      <div class="badge">arXiv 2025</div>
+      <img src="images/yolov11_fabric.png" alt="sym" style="width: 500px; height: 300px; object-fit: cover;">
+    </div>
   </div>
-  <div class="badge">arXiv 2025</div>
-
   <div class='paper-box-text' markdown="1">
     [SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
 
