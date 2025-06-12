@@ -42,7 +42,7 @@ My published papers at international conferences with <a href='https://scholar.g
 </div>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">ICBAIE 2024</code> <a href="https://www.icbaie.net/auzydjag">Tennis Match Prediction Model Based on Deep Learning and Multi-Source Information Fusion</a>Tianyu Luo, <strong>Peizhe Zhao</strong>, Xu Cheng. </li>
+  <li><code class="language-plaintext highlighter-rouge">ICBAIE 2024</code> <a href="https://www.icbaie.net/auzydjag">Tennis Match Prediction Model Based on Deep Learning and Multi-Source Information Fusion</a>, Tianyu Luo, <strong>Peizhe Zhao</strong>, Xu Cheng. </li>
   <li><code class="language-plaintext highlighter-rouge">CISCE 2024</code> <a href="https://doi.org/10.1109/CISCE62493.2024.10653354">Athlete Performance Analysis: Machine Learning for Predicting Tennis Player Scores</a>, <strong>Peizhe Zhao</strong>, Tianyu Luo, Pengfei Bi.</li>
 </ul>
 
