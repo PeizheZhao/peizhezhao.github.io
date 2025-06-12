@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Peizhe Zhao <br> (赵培喆)"
+title                    : "Peizhe Zhao (赵培喆)"
 description              : "Focusing on computer vision, machine learning, human-computer interaction and cybersecurity."
 repository               : "PeizheZhao/peizhezhao.github.io"
 google_scholar_stats_use_cdn : true
@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Peizhe Zhao (赵培喆)"
+  name             : "Peizhe Zhao <br> (赵培喆)"
   avatar           : "images/avatar.jpg"
   bio              : "Nanjing University of Information Science and Technology"
   location         : "Nanjing, China"

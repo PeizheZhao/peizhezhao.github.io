@@ -28,7 +28,7 @@ My research interest includes computer vision and deep learning applications. I 
 # 📝 Publications 
 
 <div class='paper-box'>
-  <div class='paper-box-image'><img src="images/yolov11_fabric.png" alt="sym"></div>
+  <div class='paper-box-image'><img src="images/yolov11_fabric.png" alt="sym" width="80%"></div>
   <div class="badge">arXiv 2025</div>
 </div>
 
