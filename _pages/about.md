@@ -32,7 +32,7 @@ My research interest includes computer vision and deep learning applications. I 
       <div class="badge">arXiv 2025</div>
       <img src="images/yolov11_fabric.png" alt="sym" style="width: 500px; height: 300px; object-fit: cover;">
   </div>
-  
+
   <div class='paper-box-text' markdown="1">
     [SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
 
@@ -45,6 +45,18 @@ My research interest includes computer vision and deep learning applications. I 
     - [Tennis Match Prediction Model Based on Deep Learning and Multi-Source Information Fusion](https://ieeexplore.ieee.org/xpl/conhome/1837904/all-proceedings), Second author, ICBAIE 2024
     - [Athlete Performance Analysis: Machine Learning for Predicting Tennis Player Scores](https://doi.org/10.1109/CISCE62493.2024.10653354), First author, IEEE CISCE 2024
   </div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+
+**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+
+[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+</div>
 </div>
 
 # 🎖 Honors and Awards
