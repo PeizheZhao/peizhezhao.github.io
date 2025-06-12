@@ -44,11 +44,11 @@ My published papers at international conferences with <a href='https://scholar.g
 
 # 🎖 Honors and Awards
 - *2024.06* Certified Information Security Professional - Penetration Test Engineer 
-- *2024* 2nd Prize - Nanjing University of Information Science & Technology School Scholarship
+- *2024* 2nd Prize - Nanjing University of Information Science and Technology School Scholarship
 - *2024* 1st Prize - China International College Students' Innovation Competition
 
 # 📖 Educations
-- *2022.09 - present*, Nanjing University of Information Science & Technology, BE in Artificial Intelligence
+- *2022.09 - present*, Nanjing University of Information Science and Technology, BE in Artificial Intelligence
 - *2022.09 - present*, South East Technological University, BE in Applied Computing
 
 # 💬 Academic Services
