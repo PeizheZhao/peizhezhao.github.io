@@ -27,7 +27,7 @@ My research interest includes computer vision and deep learning applications. I 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv version</div><img src="images/yolov11_fabric.png" alt="sym" style="width: 500px; height: 300px; object-fit: cover;"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv version</div><img src="images/yolov11_fabric.png" alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
@@ -40,24 +40,6 @@ My research interest includes computer vision and deep learning applications. I 
 </div>
 </div>
 
-<div class='paper-box'>
-    <div class='paper-box-image'>
-        <div>
-            <div class="badge">arXiv version</div>
-            <img src="images/yolov11_fabric.png" alt="sym" style="width: 500px; height: 300px; object-fit: cover;">
-        </div>
-    </div>
-    <div class='paper-box-text' markdown="1">
-
-[SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
-
- **Peizhe Zhao**
-
-[**Project**](https://doi.org/10.48550/arXiv.2502.01445) 
-<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Proposed innovative modules based on YOLOv11 architecture for fabric defect detection 
-    </div>
-</div>
 
 # 🎖 Honors and Awards
 - *2024.06* Certified Information Security Professional - Penetration Test Engineer 
