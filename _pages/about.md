@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am Peizhe Zhao, a student at Nanjing University of Information Science and Technology majoring in Artificial Intelligence, concurrently pursuing a BE in Applied Computing at South East Technological University. My research focuses on computer vision, deep learning applications, and multi-source information fusion. I have published papers on fabric defect detection, tennis match prediction, and athlete performance analysis.
+I am Peizhe Zhao, a student at Nanjing University of Information Science and Technology majoring in Artificial Intelligence, concurrently pursuing a BE in Applied Computing at South East Technological University. My research focuses on vision, machine learning, human-computer interaction and cybersecurity. I have published papers on fabric defect detection and athlete performance analysis.
 
-My research interest includes computer vision and deep learning applications. I have published papers at international conferences with <a href='https://scholar.google.com/citations?user=gGhv_kQAAAAJ'>google scholar citations <strong><span id='total_cit'>several</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=gGhv_kQAAAAJ'></a>).
+My published papers at international conferences with <a href='https://scholar.google.com/citations?user=gGhv_kQAAAAJ'>google scholar citations <strong><span id='total_cit'>several</span></strong></a> .
 
 # 🔥 News
 - *2025.02*: &nbsp;🎉🎉 Submit paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" on arXiv
