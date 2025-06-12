@@ -22,7 +22,7 @@ I am Peizhe Zhao, a student at Nanjing University of Information Science and Tec
 My research interest includes computer vision and deep learning applications. I have published papers at international conferences with <a href='https://scholar.google.com/citations?user=gGhv_kQAAAAJ'>google scholar citations <strong><span id='total_cit'>several</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=gGhv_kQAAAAJ'></a>).
 
 # 🔥 News
-- *2025.02*: &nbsp;🎉🎉 Published paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" on arXiv
+- *2025.02*: &nbsp;🎉🎉 Submit paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" on arXiv
 - *2024.10*: &nbsp;🎉🎉 Presented conference paper at ICBAIE 2024 as Student Delegate
 
 # 📝 Publications 
@@ -32,11 +32,12 @@ My research interest includes computer vision and deep learning applications. I 
 
 [SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
 
- **Peizhe Zhao**
+**Peizhe Zhao**
 
 [**Project**](https://doi.org/10.48550/arXiv.2502.01445) 
 <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Proposed innovative modules based on YOLOv11 architecture for fabric defect detection 
+- Based on the YOLOv11 architecture, several innovative modules have been proposed to enhance the performance of fabric defect detection.
+- Furthermore, a comprehensive dataset of fabric defects has been curated and systematically organized for the purpose of model training and evaluation.
 </div>
 </div>
 
@@ -54,5 +55,4 @@ My research interest includes computer vision and deep learning applications. I 
 - *2025.04-2025.05*, Reviewer for 34th International Conference on Artificial Neural Networks (ICANN 2025)
 - *2025.02-2025.02*, Program Committee Member for 8th International Conference on Natural Language Processing and Trends (NATAP 2025)
 
-# 💻 Conferences
-- *2025.10*, Presented paper at 5th International Conference on Big Data, Artificial Intelligence and Internet of Things Engineering (ICBAIE 2024), Shenzhen
+# 💻 Internships
