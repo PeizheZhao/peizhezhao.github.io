@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Peizhe Zhao (赵培喆)"
+title                    : "Peizhe Zhao <br> (赵培喆)"
 description              : "Focusing on computer vision, machine learning, human-computer interaction and cybersecurity."
 repository               : "PeizheZhao/peizhezhao.github.io"
 google_scholar_stats_use_cdn : true
