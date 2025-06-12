@@ -28,7 +28,9 @@ My research interest includes computer vision and deep learning applications. I 
 # 📝 Publications 
 
 <div class='paper-box'>
-  <div class='paper-box-image'><img src="images/yolov11_fabric.png" alt="sym" width="80%"></div>
+  <div class='paper-box-image'>
+    <img src="images/yolov11_fabric.png" alt="sym" style="width: 250px; height: 150px; object-fit: cover;">
+  </div>
   <div class="badge">arXiv 2025</div>
 </div>
 
@@ -41,8 +43,6 @@ My research interest includes computer vision and deep learning applications. I 
 [**Project**](https://doi.org/10.48550/arXiv.2502.01445)
 - Proposed innovative modules based on YOLOv11 architecture for fabric defect detection
 - Curated comprehensive fabric defect dataset for model training and evaluation
-</div>
-</div>
 
 - [Tennis Match Prediction Model Based on Deep Learning and Multi-Source Information Fusion](https://ieeexplore.ieee.org/xpl/conhome/1837904/all-proceedings), Second author, ICBAIE 2024
 - [Athlete Performance Analysis: Machine Learning for Predicting Tennis Player Scores](https://doi.org/10.1109/CISCE62493.2024.10653354), First author, IEEE CISCE 2024
