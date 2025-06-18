@@ -60,3 +60,4 @@ My published papers at international conferences with <a href='https://scholar.g
 - *2025.02-2025.02*, Program Committee Member for 8th International Conference on Natural Language Processing and Trends (NATAP 2025)
 
 # 💻 Internships
+- *2025.06- present*, Visiting Student, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
