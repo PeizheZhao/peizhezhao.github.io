@@ -35,7 +35,7 @@ My published papers at international conferences with <a href='https://scholar.g
 **Peizhe Zhao**
 
 [**Project**](https://doi.org/10.48550/arXiv.2502.01445) 
-<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+<strong><span class='show_paper_citations' data='gGhv_kQAAAAJ:u5HHmVD_uO8C'></span></strong>
 - Based on the YOLOv11 architecture, several innovative modules have been proposed to enhance the performance of fabric defect detection.
 - Furthermore, a comprehensive dataset of fabric defects has been curated and systematically organized for the purpose of model training and evaluation.
 </div>
