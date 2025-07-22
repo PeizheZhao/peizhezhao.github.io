@@ -57,6 +57,8 @@ My published papers at international conferences with <a href='https://scholar.g
 - *2022.09 - present*, South East Technological University, BE in Applied Computing
 
 # 💬 Academic Services
+- *2025.07-2025.08*, Program Committee Member for 22th Pacific Rim International Conference on Artificial Intelligence (PRICAI 2025)
+- *2025.07-2025.08*, Program Committee Member for 6th International Conference on Machine Learning Techniques and Data Science (MLDS 2025)
 - *2025.04-2025.05*, Reviewer for 34th International Conference on Artificial Neural Networks (ICANN 2025)
 - *2025.02-2025.02*, Program Committee Member for 8th International Conference on Natural Language Processing and Trends (NATAP 2025)
 
