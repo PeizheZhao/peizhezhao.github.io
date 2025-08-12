@@ -47,14 +47,12 @@ My published papers at international conferences with <a href='https://scholar.g
   <li><code class="language-plaintext highlighter-rouge">CISCE 2024</code> <a href="https://doi.org/10.1109/CISCE62493.2024.10653354">Athlete Performance Analysis: Machine Learning for Predicting Tennis Player Scores</a>, <strong>Peizhe Zhao</strong>, Tianyu Luo, Pengfei Bi.</li>
 </ul>
 
-# 🎖 Honors and Awards
-- *2024.06* Certified Information Security Professional - Penetration Test Engineer 
-- *2024* 2nd Prize - Nanjing University of Information Science and Technology School Scholarship
-- *2024* 1st Prize - China International College Students' Innovation Competition
-
 # 📖 Educations
-- *2022.09 - present*, Nanjing University of Information Science and Technology, BE in Artificial Intelligence
-- *2022.09 - present*, South East Technological University, BE in Applied Computing
+- <img src="images/nuist.jpg" style="width: 20px; vertical-align: middle;"> *2022.09 - present*, Nanjing University of Information Science and Technology, BE in Artificial Intelligence
+- <img src="images/nuist.jpg" style="width: 20px; vertical-align: middle;">*2022.09 - present*, South East Technological University, BE in Applied Computing
+
+# 💻 Internships
+- *2025.06- present*, Visiting Student, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
 
 # 💬 Academic Services
 - *2025.07-2025.08*, Program Committee Member for 22th Pacific Rim International Conference on Artificial Intelligence (PRICAI 2025)
@@ -62,5 +60,7 @@ My published papers at international conferences with <a href='https://scholar.g
 - *2025.04-2025.05*, Reviewer for 34th International Conference on Artificial Neural Networks (ICANN 2025)
 - *2025.02-2025.02*, Program Committee Member for 8th International Conference on Natural Language Processing and Trends (NATAP 2025)
 
-# 💻 Internships
-- *2025.06- present*, Visiting Student, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
+# 🎖 Honors and Awards
+- *2024.06* Certified Information Security Professional - Penetration Test Engineer 
+- *2024* 2nd Prize - Nanjing University of Information Science and Technology School Scholarship
+- *2024* 1st Prize - China International College Students' Innovation Competition
