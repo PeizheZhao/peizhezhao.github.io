@@ -48,11 +48,11 @@ My published papers at international conferences with <a href='https://scholar.g
 </ul>
 
 # 📖 Educations
-- <img src="images/nuist.jpg" style="width: 20px; vertical-align: middle;"> *2022.09 - present*, Nanjing University of Information Science and Technology, BE in Artificial Intelligence
-- <img src="images/nuist.jpg" style="width: 20px; vertical-align: middle;">*2022.09 - present*, South East Technological University, BE in Applied Computing
+- <img src="images/nuist.svg" style="width: 22px; vertical-align: middle;"> *2022.09 - present*, Nanjing University of Information Science and Technology, BE in Artificial Intelligence
+- <img src="images/setu.svg" style="width: 22px; vertical-align: middle;"> *2022.09 - present*, South East Technological University, BE in Applied Computing
 
 # 💻 Internships
-- *2025.06- present*, Visiting Student, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
+- <img src="images/suat.svg" style="width: 22px; vertical-align: middle;"> *2025.06- present*, Visiting Student, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
 
 # 💬 Academic Services
 - *2025.07-2025.08*, Program Committee Member for 22th Pacific Rim International Conference on Artificial Intelligence (PRICAI 2025)
