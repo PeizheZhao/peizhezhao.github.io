@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Peizhe Zhao (赵培喆)"
-description              : "Focusing on computer vision, machine learning, human-computer interaction and cybersecurity."
+description              : "Focusing on deep learning, human-computer interaction and cybersecurity."
 repository               : "PeizheZhao/peizhezhao.github.io"
 google_scholar_stats_use_cdn : False
 
@@ -22,13 +22,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Peizhe Zhao <br> (赵培喆)"
-  avatar           : "https://gitpage-img.oss-cn-nanjing.aliyuncs.com/images/android-chrome-512x512.png"
+  avatar           : "images/android-chrome-512x512.png"
   bio              : "Nanjing University of Information Science and Technology"
   location         : "Nanjing, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=gGhv_kQAAAAJ"
-  email            : "zhaopeizhepro@outlook.com"
+  email            : "asher.zhao.ai@outlook.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
