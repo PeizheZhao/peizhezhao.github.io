@@ -28,7 +28,7 @@ My published papers at international conferences with <a href='https://scholar.g
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv version</div><img src="https://gitpage-img.oss-cn-nanjing.aliyuncs.com/images/yolov11_fabric.png" alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv version</div><img src="images/yolov11_fabric.png" alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
