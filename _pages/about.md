@@ -23,12 +23,14 @@ My published papers at international conferences with <a href='https://scholar.g
 <!--<strong><span id='total_cit'>several</span></strong></a>-->
 
 # 🔥 News
+- *2025.10*: &nbsp;🎉🎉 Paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" has been accepted by 2025 IEEE International Conference on Big Data (CCF-C)
+- *5.10*: &nbsp;🎉🎉 Presented conference paper at ACAIB 2025
 - *2025.02*: &nbsp;🎉🎉 Submit paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" on arXiv
 - *2024.10*: &nbsp;🎉🎉 Presented conference paper at ICBAIE 2024 as Student Delegate
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv version</div><img src="images/yolov11_fabric.png" alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">BigData 2025</div><img src="images/yolov11_fabric.png" alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
