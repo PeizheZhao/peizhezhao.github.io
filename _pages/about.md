@@ -23,10 +23,10 @@ My published papers at international conferences with <a href='https://scholar.g
 <!--<strong><span id='total_cit'>several</span></strong></a>-->
 
 # 🔥 News
-- *2025.10*: &nbsp;🎉🎉 Paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" has been accepted by 2025 IEEE International Conference on Big Data (CCF-C)
-- *5.10*: &nbsp;🎉🎉 Presented conference paper at ACAIB 2025
-- *2025.02*: &nbsp;🎉🎉 Submit paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" on arXiv
-- *2024.10*: &nbsp;🎉🎉 Presented conference paper at ICBAIE 2024 as Student Delegate
+- *2025.10*: &nbsp;🎉🎉🎉 Paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" has been accepted by 2025 IEEE International Conference on Big Data (CCF-C)
+- *2025.10*: &nbsp;🎉 Presented conference paper at ACAIB 2025
+- *2025.02*: &nbsp;🎉 Submit paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" on arXiv
+- *2024.10*: &nbsp;🎉 Presented conference paper at ICBAIE 2024 as Student Delegate
 
 # 📝 Publications 
 
@@ -35,7 +35,7 @@ My published papers at international conferences with <a href='https://scholar.g
 
 [SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
 
-**Peizhe Zhao**
+**Peizhe Zhao**, Shunbo Jia
 
 [**Project**](https://doi.org/10.48550/arXiv.2502.01445) 
 <strong><span class='show_paper_citations' data='gGhv_kQAAAAJ:u5HHmVD_uO8C'></span></strong>
