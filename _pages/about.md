@@ -37,12 +37,7 @@ My published papers at international conferences with <a href='https://scholar.g
 
 **Peizhe Zhao**, Shunbo Jia
 
-[**Project**](https://doi.org/10.48550/arXiv.2502.01445) 
-<strong><span class='show_paper_citations' data='gGhv_kQAAAAJ:u5HHmVD_uO8C'></span></strong>
-- Based on the YOLOv11 architecture, several innovative modules have been proposed to enhance the performance of fabric defect detection.
-- Furthermore, a comprehensive dataset of fabric defects has been curated and systematically organized for the purpose of model training and evaluation.
-</div>
-</div>
+</div></div>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">ACAIB 2025</code> <a href="https://doi.org/10.1145/3760269.3760308">Tennis Match Prediction Model Based on Deep Learning and Multi-Source Information Fusion</a>, Tianyu Luo, <strong>Peizhe Zhao</strong>, Xu Cheng. </li>
