@@ -6,8 +6,10 @@ from datetime import datetime
 from scholarly import scholarly, ProxyGenerator
 
 def main():
-    # 1. 检查环境变量
+    # 1. 优先检查并获取所有环境变量
     scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID")
+    scraper_key = os.environ.get("SCRAPERAPI_KEY")
+
     if not scholar_id:
         print("❌ 错误: 未找到环境变量 GOOGLE_SCHOLAR_ID")
         return
@@ -15,50 +17,68 @@ def main():
     print(f"🚀 开始获取学者数据，ID: {scholar_id}")
 
     # ==========================================
-    # 防卡死核心优化 1：设置全局网络超时与反爬轻度伪装
+    # 防卡死核心优化 1：注入商业级免封锁代理
     # ==========================================
-    # scholarly 底层使用 requests，我们可以通过环境变量强制设定全局超时时间（单位：秒）
-    os.environ["SOLR_TIMEOUT"] = "15"  # 限制内部某些组件超时
+    if scraper_key:
+        try:
+            pg = ProxyGenerator()
+            success = pg.ScraperAPI(scraper_key)
+            if success:
+                scholarly.use_proxy(pg)
+                print("✅ 成功注入商业级免封锁代理！")
+            else:
+                print("⚠️ 代理激活返回失败，将尝试使用原生网络...")
+        except Exception as proxy_err:
+            print(f"⚠️ 注入代理时发生异常: {proxy_err}，转为原生网络...")
+    else:
+        print("⚠️ 未检测到 SCRAPERAPI_KEY，将使用原生网络（在 GitHub Actions 中极易卡死）")
+
+    # ==========================================
+    # 防卡死核心优化 2：设置全局网络超时与反爬轻度伪装
+    # ==========================================
+    os.environ["SOLR_TIMEOUT"] = "20"  # 适当延长到 20 秒，给代理节点留出响应时间
     
-    # 强制为 scholarly 内部的 requests 会话注入超时
-    # 这样即使被 Google 拦截或断网，15秒内一定会抛出异常，绝不无限制卡死
     import requests
     original_get = requests.Session.get
     def timeout_get(*args, **kwargs):
-        kwargs['timeout'] = kwargs.get('timeout', 15)
-        # 顺便加入随机延迟，模拟人类人类行为，降低被封锁概率
-        time.sleep(random.uniform(1.0, 3.0))
+        # 如果走 ScraperAPI 代理，节点切换有时需要较长时间，这里给 25 秒防死锁超时
+        kwargs['timeout'] = kwargs.get('timeout', 25)
+        # 既然用了付费商业代理，可以减少不必要的等待，这里设为轻微的 0.5 ~ 1.5 秒
+        time.sleep(random.uniform(0.5, 1.5))
         return original_get(*args, **kwargs)
     requests.Session.get = timeout_get
 
     try:
         # 2. 基础信息查询
+        print("📥 正在检索学者基础 ID 节点...")
         author = scholarly.search_author_id(scholar_id)
         
         # ==========================================
-        # 防卡死核心优化 2：分步填充（Step-by-step filling）与异常捕获
+        # 防卡死核心优化 3：分步填充与异常隔离
         # ==========================================
         print("📥 正在分步拉取学者基础、指数及计数数据...")
         scholarly.fill(author, sections=["basics", "indices", "counts"])
         
-        # 将 publications 的填充单独剥离，因为这一步最容易因论文过多触发反爬卡死
+        # 将 publications 的填充单独剥离，由于调用了 ScraperAPI，这一步的成功率会暴增
         try:
-            print("📥 正在尝试拉取详细论文列表（此步骤最易触发 Google 拦截）...")
+            print("📥 正在尝试拉取详细论文列表（通过代理进行）...")
             scholarly.fill(author, sections=["publications"])
         except Exception as pub_err:
-            print(f"⚠️ 警告: 论文列表详细数据拉取失败 (可能触发了Google人机验证). 错误信息: {pub_err}")
+            print(f"⚠️ 警告: 论文列表详细数据拉取失败. 错误信息: {pub_err}")
             print("💡 系统将保留已获取的基础引用数据，继续生成报告，防止整个任务崩溃。")
             if "publications" not in author:
                 author["publications"] = []
 
-        # 3. 数据清洗与加工
+        # 3. 数据清洗与加工 (修正了原代码的循环 Bug)
         author["updated"] = str(datetime.now())
         
-        # 兼容处理：确保 publications 是列表且可以被正确转化
         if isinstance(author.get("publications"), list):
-            author["publications"] = {v["author_pub_id"]: v for v in author if "author_pub_id" in v}
+            # ✅ 修复：遍历目标改为列表本身 author["publications"]
+            author["publications"] = {
+                v["author_pub_id"]: v for v in author["publications"] if "author_pub_id" in v
+            }
         elif isinstance(author.get("publications"), dict):
-            pass # 已经是字典格式则不处理
+            pass 
         else:
             author["publications"] = {}
 
@@ -83,7 +103,6 @@ def main():
 
     except Exception as e:
         print(f"❌ 运行过程中遭遇致命错误: {e}")
-        # 如果因为某些原因极度不顺（比如第一步就挂了），退出并返回非0代码让 Action 报错
         exit(1)
 
 if __name__ == "__main__":
