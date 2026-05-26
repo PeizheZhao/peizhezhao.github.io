@@ -3,15 +3,18 @@ import json
 import random
 import time
 from datetime import datetime
-from scholarly import scholarly, ProxyGenerator
+from scholarly import scholarly
 
 def main():
-# 1. 优先获取环境变量，如果为空则使用本地默认值
+
+    # 1. 优先获取环境变量，如果为空则使用本地默认值
     scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID")
-    scraper_key = os.environ.get("SCRAPERAPI_KEY")
+    # 云端也可以配置一个名为 SOCKS_PROXY 的密文环境变量
+    # SOCKS5 代理地址 (例如 "127.0.0.1:7890" 或带有账号密码的 "user:pass@ip:port")
+    socks_proxy = os.environ.get("SOCKS_PROXY")
 
     scholar_id = scholar_id.strip() if scholar_id else None
-    scraper_key = scraper_key.strip() if scraper_key else None
+    socks_proxy = socks_proxy.strip() if socks_proxy else None
 
     if not scholar_id or scholar_id == "你的GoogleScholarID":
         print("❌ 错误: 未配置 Google Scholar ID。")
@@ -20,7 +23,7 @@ def main():
     print(f"🚀 开始获取学者数据，ID: {scholar_id}")
 
     # ==========================================
-    # 防卡死核心优化 1 & 2：手动拦截 requests 并注入 ScraperAPI 代理与超时
+    # 防卡死核心优化 1 & 2：手动拦截 requests 并注入 SOCKS5 代理与超时
     # ==========================================
     os.environ["SOLR_TIMEOUT"] = "20"
     
@@ -31,18 +34,18 @@ def main():
         # 1. 强行注入超时时间
         kwargs['timeout'] = kwargs.get('timeout', 25)
         
-        # 2. 绕过 scholarly 报错组件，手动注入 ScraperAPI 的官方标准代理
-        if scraper_key:
-            # ScraperAPI 的标准 HTTP 代理格式
-            proxy_url = f"http://scraperapi:{scraper_key}@proxy-server.scraperapi.com:8001"
+        # 2. 注入 SOCKS5 代理
+        if socks_proxy:
+            # 格式化为 requests 识别的 socks5h:// (带 h 表示让代理服务器去解析 DNS，防污染/防卡死)
+            proxy_url = f"socks5h://{socks_proxy}"
             kwargs['proxies'] = {
                 "http": proxy_url,
                 "https": proxy_url
             }
-            # 走商业代理时，Google 判定为真人，不需要高延时，轻微伪装即可
-            time.sleep(random.uniform(0.3, 1.0))
+            # 既然用了你自己的代理，建议保留轻微伪装延时
+            time.sleep(random.uniform(1.0, 2.5))
         else:
-            # 如果没有 Key，走原生网络，加入较高延迟降低被封概率
+            # 如果没有配置代理，走原生网络
             time.sleep(random.uniform(1.5, 3.0))
             
         return original_get(self, *args, **kwargs)
@@ -50,10 +53,10 @@ def main():
     # 替换 requests 内部类的类方法，确保 scholarly 所有的请求都能被注入代理
     requests.Session.get = timeout_and_proxy_get
     
-    if scraper_key:
-        print("✅ 成功通过 requests 拦截器强行注入 ScraperAPI 商业代理！")
+    if socks_proxy:
+        print(f"✅ 成功通过 requests 拦截器强行注入 SOCKS5 代理 [{socks_proxy}]！")
     else:
-        print("💡 未检测到有效的 SCRAPERAPI_KEY，将使用原生网络进行请求。")
+        print("💡 未检测到有效的 SOCKS5 代理配置，将使用原生网络进行请求。")
 
     try:
         # 2. 基础信息查询
