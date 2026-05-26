@@ -3,82 +3,62 @@ import json
 import random
 import time
 from datetime import datetime
-from scholarly import scholarly
+from scholarly import scholarly, ProxyGenerator
 
 def main():
-
-    # 1. 优先获取环境变量，如果为空则使用本地默认值
+    # 1. 检查环境变量
     scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID")
-    # 云端也可以配置一个名为 SOCKS_PROXY 的密文环境变量
-    # SOCKS5 代理地址 (例如 "127.0.0.1:7890" 或带有账号密码的 "user:pass@ip:port")
-    socks_proxy = os.environ.get("SOCKS_PROXY")
+    if not scholar_id:
+        print("❌ 错误: 未找到环境变量 GOOGLE_SCHOLAR_ID")
+        return
 
     print(f"🚀 开始获取学者数据，ID: {scholar_id}")
 
     # ==========================================
-    # 防卡死核心优化 1 & 2：手动拦截 requests 并注入 SOCKS5 代理与超时
+    # 防卡死核心优化 1：设置全局网络超时与反爬轻度伪装
     # ==========================================
-    os.environ["SOLR_TIMEOUT"] = "20"
+    # scholarly 底层使用 requests，我们可以通过环境变量强制设定全局超时时间（单位：秒）
+    os.environ["SOLR_TIMEOUT"] = "15"  # 限制内部某些组件超时
     
+    # 强制为 scholarly 内部的 requests 会话注入超时
+    # 这样即使被 Google 拦截或断网，15秒内一定会抛出异常，绝不无限制卡死
     import requests
     original_get = requests.Session.get
-
-    def timeout_and_proxy_get(self, *args, **kwargs):
-        # 1. 强行注入超时时间
-        kwargs['timeout'] = kwargs.get('timeout', 25)
-        
-        # 2. 注入 SOCKS5 代理
-        if socks_proxy:
-            # 格式化为 requests 识别的 socks5h:// (带 h 表示让代理服务器去解析 DNS，防污染/防卡死)
-            proxy_url = f"socks5h://{socks_proxy}"
-            kwargs['proxies'] = {
-                "http": proxy_url,
-                "https": proxy_url
-            }
-            # 既然用了你自己的代理，建议保留轻微伪装延时
-            time.sleep(random.uniform(1.0, 2.5))
-        else:
-            # 如果没有配置代理，走原生网络
-            time.sleep(random.uniform(1.5, 3.0))
-            
-        return original_get(self, *args, **kwargs)
-
-    # 替换 requests 内部类的类方法，确保 scholarly 所有的请求都能被注入代理
-    requests.Session.get = timeout_and_proxy_get
-    
-    if socks_proxy:
-        print(f"✅ 成功通过 requests 拦截器强行注入 SOCKS5 代理 [{socks_proxy}]！")
-    else:
-        print("💡 未检测到有效的 SOCKS5 代理配置，将使用原生网络进行请求。")
+    def timeout_get(*args, **kwargs):
+        kwargs['timeout'] = kwargs.get('timeout', 15)
+        # 顺便加入随机延迟，模拟人类人类行为，降低被封锁概率
+        time.sleep(random.uniform(1.0, 3.0))
+        return original_get(*args, **kwargs)
+    requests.Session.get = timeout_get
 
     try:
         # 2. 基础信息查询
-        print("📥 正在检索学者基础 ID 节点...")
         author = scholarly.search_author_id(scholar_id)
         
         # ==========================================
-        # 防卡死核心优化 3：分步填充与异常隔离
+        # 防卡死核心优化 2：分步填充（Step-by-step filling）与异常捕获
         # ==========================================
         print("📥 正在分步拉取学者基础、指数及计数数据...")
         scholarly.fill(author, sections=["basics", "indices", "counts"])
         
+        # 将 publications 的填充单独剥离，因为这一步最容易因论文过多触发反爬卡死
         try:
-            print("📥 正在尝试拉取详细论文列表...")
-            # scholarly.fill(author, sections=["publications"])
+            print("📥 正在尝试拉取详细论文列表（此步骤最易触发 Google 拦截）...")
+            scholarly.fill(author, sections=["publications"])
         except Exception as pub_err:
-            print(f"⚠️ 警告: 论文列表详细数据拉取失败. 错误信息: {pub_err}")
+            print(f"⚠️ 警告: 论文列表详细数据拉取失败 (可能触发了Google人机验证). 错误信息: {pub_err}")
+            print("💡 系统将保留已获取的基础引用数据，继续生成报告，防止整个任务崩溃。")
             if "publications" not in author:
                 author["publications"] = []
 
         # 3. 数据清洗与加工
         author["updated"] = str(datetime.now())
         
+        # 兼容处理：确保 publications 是列表且可以被正确转化
         if isinstance(author.get("publications"), list):
-            author["publications"] = {
-                v["author_pub_id"]: v for v in author["publications"] if "author_pub_id" in v
-            }
+            author["publications"] = {v["author_pub_id"]: v for v in author if "author_pub_id" in v}
         elif isinstance(author.get("publications"), dict):
-            pass 
+            pass # 已经是字典格式则不处理
         else:
             author["publications"] = {}
 
@@ -88,7 +68,7 @@ def main():
         # 写入主数据
         with open("results/gs_data.json", "w", encoding="utf-8") as outfile:
             json.dump(author, outfile, ensure_ascii=False, indent=2)
-        print("✅ 主数据 `results/gs_data.json` 写入成功。")
+        print("✅ 主数据 `gs_data.json` 写入成功。")
 
         # 写入 Shields.io 徽章数据
         shieldio_data = {
@@ -103,6 +83,7 @@ def main():
 
     except Exception as e:
         print(f"❌ 运行过程中遭遇致命错误: {e}")
+        # 如果因为某些原因极度不顺（比如第一步就挂了），退出并返回非0代码让 Action 报错
         exit(1)
 
 if __name__ == "__main__":

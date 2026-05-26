@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15 # 设置超时保护，防止死锁浪费额度
+    timeout-minutes: 8 # 设置超时保护，防止死锁浪费额度
     
     steps:
     - name: Checkout Code
