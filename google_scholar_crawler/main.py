@@ -62,7 +62,7 @@ def main():
         # 将 publications 的填充单独剥离，由于调用了 ScraperAPI，这一步的成功率会暴增
         try:
             print("📥 正在尝试拉取详细论文列表（通过代理进行）...")
-            scholarly.fill(author, sections=["publications"])
+            # scholarly.fill(author, sections=["publications"])
         except Exception as pub_err:
             print(f"⚠️ 警告: 论文列表详细数据拉取失败. 错误信息: {pub_err}")
             print("💡 系统将保留已获取的基础引用数据，继续生成报告，防止整个任务崩溃。")
