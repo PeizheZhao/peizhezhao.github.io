@@ -13,13 +13,6 @@ def main():
     # SOCKS5 代理地址 (例如 "127.0.0.1:7890" 或带有账号密码的 "user:pass@ip:port")
     socks_proxy = os.environ.get("SOCKS_PROXY")
 
-    scholar_id = scholar_id.strip() if scholar_id else None
-    socks_proxy = socks_proxy.strip() if socks_proxy else None
-
-    if not scholar_id or scholar_id == "你的GoogleScholarID":
-        print("❌ 错误: 未配置 Google Scholar ID。")
-        return
-
     print(f"🚀 开始获取学者数据，ID: {scholar_id}")
 
     # ==========================================

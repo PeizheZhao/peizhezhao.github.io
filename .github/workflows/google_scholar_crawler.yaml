@@ -29,6 +29,7 @@ jobs:
         python3 main.py
       env:
         GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        SOCKS_PROXY: ${{ secrets.SOCKS_PROXY }}
 
     - name: Push Results to Branch
       run: |
