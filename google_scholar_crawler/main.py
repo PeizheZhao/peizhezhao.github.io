@@ -6,47 +6,54 @@ from datetime import datetime
 from scholarly import scholarly, ProxyGenerator
 
 def main():
-    # 1. 优先检查并获取所有环境变量
+# 1. 优先获取环境变量，如果为空则使用本地默认值
     scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID")
     scraper_key = os.environ.get("SCRAPERAPI_KEY")
 
-    if not scholar_id:
-        print("❌ 错误: 未找到环境变量 GOOGLE_SCHOLAR_ID")
+    scholar_id = scholar_id.strip() if scholar_id else None
+    scraper_key = scraper_key.strip() if scraper_key else None
+
+    if not scholar_id or scholar_id == "你的GoogleScholarID":
+        print("❌ 错误: 未配置 Google Scholar ID。")
         return
 
     print(f"🚀 开始获取学者数据，ID: {scholar_id}")
 
     # ==========================================
-    # 防卡死核心优化 1：注入商业级免封锁代理
+    # 防卡死核心优化 1 & 2：手动拦截 requests 并注入 ScraperAPI 代理与超时
     # ==========================================
-    if scraper_key:
-        try:
-            pg = ProxyGenerator()
-            success = pg.ScraperAPI(scraper_key)
-            if success:
-                scholarly.use_proxy(pg)
-                print("✅ 成功注入商业级免封锁代理！")
-            else:
-                print("⚠️ 代理激活返回失败，将尝试使用原生网络...")
-        except Exception as proxy_err:
-            print(f"⚠️ 注入代理时发生异常: {proxy_err}，转为原生网络...")
-    else:
-        print("⚠️ 未检测到 SCRAPERAPI_KEY，将使用原生网络（在 GitHub Actions 中极易卡死）")
-
-    # ==========================================
-    # 防卡死核心优化 2：设置全局网络超时与反爬轻度伪装
-    # ==========================================
-    os.environ["SOLR_TIMEOUT"] = "20"  # 适当延长到 20 秒，给代理节点留出响应时间
+    os.environ["SOLR_TIMEOUT"] = "20"
     
     import requests
     original_get = requests.Session.get
-    def timeout_get(*args, **kwargs):
-        # 如果走 ScraperAPI 代理，节点切换有时需要较长时间，这里给 25 秒防死锁超时
+
+    def timeout_and_proxy_get(self, *args, **kwargs):
+        # 1. 强行注入超时时间
         kwargs['timeout'] = kwargs.get('timeout', 25)
-        # 既然用了付费商业代理，可以减少不必要的等待，这里设为轻微的 0.5 ~ 1.5 秒
-        time.sleep(random.uniform(0.5, 1.5))
-        return original_get(*args, **kwargs)
-    requests.Session.get = timeout_get
+        
+        # 2. 绕过 scholarly 报错组件，手动注入 ScraperAPI 的官方标准代理
+        if scraper_key:
+            # ScraperAPI 的标准 HTTP 代理格式
+            proxy_url = f"http://scraperapi:{scraper_key}@proxy-server.scraperapi.com:8001"
+            kwargs['proxies'] = {
+                "http": proxy_url,
+                "https": proxy_url
+            }
+            # 走商业代理时，Google 判定为真人，不需要高延时，轻微伪装即可
+            time.sleep(random.uniform(0.3, 1.0))
+        else:
+            # 如果没有 Key，走原生网络，加入较高延迟降低被封概率
+            time.sleep(random.uniform(1.5, 3.0))
+            
+        return original_get(self, *args, **kwargs)
+
+    # 替换 requests 内部类的类方法，确保 scholarly 所有的请求都能被注入代理
+    requests.Session.get = timeout_and_proxy_get
+    
+    if scraper_key:
+        print("✅ 成功通过 requests 拦截器强行注入 ScraperAPI 商业代理！")
+    else:
+        print("💡 未检测到有效的 SCRAPERAPI_KEY，将使用原生网络进行请求。")
 
     try:
         # 2. 基础信息查询
@@ -59,21 +66,18 @@ def main():
         print("📥 正在分步拉取学者基础、指数及计数数据...")
         scholarly.fill(author, sections=["basics", "indices", "counts"])
         
-        # 将 publications 的填充单独剥离，由于调用了 ScraperAPI，这一步的成功率会暴增
         try:
-            print("📥 正在尝试拉取详细论文列表（通过代理进行）...")
+            print("📥 正在尝试拉取详细论文列表...")
             # scholarly.fill(author, sections=["publications"])
         except Exception as pub_err:
             print(f"⚠️ 警告: 论文列表详细数据拉取失败. 错误信息: {pub_err}")
-            print("💡 系统将保留已获取的基础引用数据，继续生成报告，防止整个任务崩溃。")
             if "publications" not in author:
                 author["publications"] = []
 
-        # 3. 数据清洗与加工 (修正了原代码的循环 Bug)
+        # 3. 数据清洗与加工
         author["updated"] = str(datetime.now())
         
         if isinstance(author.get("publications"), list):
-            # ✅ 修复：遍历目标改为列表本身 author["publications"]
             author["publications"] = {
                 v["author_pub_id"]: v for v in author["publications"] if "author_pub_id" in v
             }
@@ -88,7 +92,7 @@ def main():
         # 写入主数据
         with open("results/gs_data.json", "w", encoding="utf-8") as outfile:
             json.dump(author, outfile, ensure_ascii=False, indent=2)
-        print("✅ 主数据 `gs_data.json` 写入成功。")
+        print("✅ 主数据 `results/gs_data.json` 写入成功。")
 
         # 写入 Shields.io 徽章数据
         shieldio_data = {
