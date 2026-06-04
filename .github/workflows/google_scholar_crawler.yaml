@@ -3,7 +3,7 @@ name: Get Citation Data
 on:
   page_build:
   schedule:
-    - cron: '0 8 * * *' # 每天北京时间 16:00 运行 (UTC 8:00)
+    - cron: '0 8 * * 1' # 每周一下午 4:00 运行 (UTC 8:00)
   workflow_dispatch: # 允许你在 GitHub 网页上手动点击按钮触发，方便测试
 
 jobs:
