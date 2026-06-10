@@ -18,7 +18,7 @@
     opacity: 1;
     position: fixed;
     top: 4.25rem;
-    left: calc((100vw - #{$large}) / 2 + 1em);
+    left: 1em;
     width: 140px;
     -webkit-transform: none;
             transform: none;
@@ -28,6 +28,11 @@
     &:hover {
       opacity: 1;
     }
+  }
+
+  @include breakpoint($content-width) {
+    left: calc((100vw - #{$content-width}) / 2 + 1em);
+    width: 165px;
   }
 
   h2, h3, h4, h5, h6 {
