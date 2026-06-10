@@ -47,7 +47,7 @@ My research outputs have accumulated a total of <a href='https://scholar.google.
 # 📖 Educations
 - <img src="images/ucl.svg" style="width: 30px; vertical-align: middle;"> &#124; *2026.09 - present*, University College London, MSc in Artificial Intelligence and Medical Imaging
 - <img src="images/nuist.svg" style="width: 30px; vertical-align: middle;"> &#124; *2022.09 - 2026.06*, Nanjing University of Information Science and Technology, BE in Artificial Intelligence
-- <img src="images/setu.svg" style="width: 30px; vertical-align: middle;"> &#124; *2022.09 - 2026.06*, South East Technological University, BE in Applied Computing
+- <img src="images/setu.svg" style="width: 30px; vertical-align: middle;"> &#124; *2022.09 - 2026.06*, South East Technological University, BS in Applied Computing
 
 # 💻 Internships
 - <img src="images/suat.svg" style="width: 30px; vertical-align: middle;"> &#124; *2025.06 - present*, Visiting Student, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
