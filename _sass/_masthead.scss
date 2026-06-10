@@ -41,7 +41,7 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: .5em 3em;
+    padding: .5em 1em;
     font-family: $sans-serif-narrow;
     nav {
       z-index: 10;
