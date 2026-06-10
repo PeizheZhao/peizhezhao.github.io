@@ -23,11 +23,6 @@
     padding-left: 1em;
     padding-right: 1em;
   }
-
-  @include breakpoint($x-large) {
-    max-width: $x-large;
-  }
-
   ol {
     padding: 0;
     list-style: none;
@@ -35,10 +30,6 @@
 
     @include breakpoint($large) {
       @include span(10 of 12 last);
-    }
-
-    @include breakpoint($x-large) {
-      @include prefix(0.5 of 12);
     }
   }
 

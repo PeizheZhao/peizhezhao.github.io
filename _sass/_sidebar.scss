@@ -30,13 +30,6 @@
     }
   }
 
-
-  @include breakpoint($x-large) {
-    left: calc((100vw - #{$x-large}) / 2 + 1em);
-    width: 195px;
-    padding-right: 0;
-  }
-
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
@@ -66,10 +59,6 @@
     width: $right-sidebar-width-narrow;
     margin-left: span(0.5 of 12);
     z-index: 10;
-  }
-
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
   }
 }
 
