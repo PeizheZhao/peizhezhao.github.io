@@ -16,6 +16,12 @@
   @include breakpoint($large) {
     @include span(2 of 12);
     opacity: 1;
+    position: fixed;
+    top: 4.25rem;
+    left: calc((100vw - #{$large}) / 2 + 1em);
+    width: 140px;
+    -webkit-transform: none;
+            transform: none;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
 
@@ -26,6 +32,8 @@
 
 
   @include breakpoint($x-large) {
+    left: calc((100vw - #{$x-large}) / 2 + 1em);
+    width: 195px;
     padding-right: 0;
   }
 
