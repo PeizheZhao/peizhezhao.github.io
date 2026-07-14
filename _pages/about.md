@@ -44,6 +44,19 @@ My research outputs have accumulated a total of <a href='https://scholar.google.
   <li><code class="language-plaintext highlighter-rouge">CISCE 2024</code> <a href="https://doi.org/10.1109/CISCE62493.2024.10653354">Athlete Performance Analysis: Machine Learning for Predicting Tennis Player Scores</a>, <strong>Peizhe Zhao</strong>, Tianyu Luo, Pengfei Bi.</li>
 </ul>
 
+# 📊 Dataset
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EgoWrist</div><img src="images/egowrist_overview.png" alt="Examples of the 30 EgoWrist-Gesture30 gesture classes from dorsal and palm wrist-camera views" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[EgoWrist-Gesture30: Dual-View Wrist-Mounted RGB and IMU Gesture Resource](https://peizhezhao.github.io/EgoWrist-Gesture30/)
+
+A research resource for dynamic hand-gesture recognition, captured with complementary dorsal and palm wrist-mounted RGB cameras together with a WT61C-TTL inertial measurement unit.
+
+**30 gesture classes** · **336 recordings** · **2,751 annotated intervals**
+
+</div></div>
+
 # 📖 Educations
 - <img src="images/ucl.svg" style="width: 30px; vertical-align: middle;"> &#124; *2026.09 - present*, University College London, MSc in Artificial Intelligence and Medical Imaging
 - <img src="images/nuist.svg" style="width: 30px; vertical-align: middle;"> &#124; *2022.09 - 2026.06*, Nanjing University of Information Science and Technology, BE in Artificial Intelligence

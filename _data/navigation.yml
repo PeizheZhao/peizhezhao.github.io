@@ -9,6 +9,9 @@ main:
   - title: "Publications"
     url: "/#-publications"
 
+  - title: "Dataset"
+    url: "/#-dataset"
+
   - title: "Educations"
     url: "/#-educations"
 
