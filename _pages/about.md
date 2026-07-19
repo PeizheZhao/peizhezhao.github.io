@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am Peizhe Zhao, a student at University College London. My research focuses on vision, deep learning, pre-trained models and brain-computer interfaces. I have published papers on object detection and novel devices for HCI. Currently, I am working on next-generation brain-computer interfaces.
+I am Peizhe Zhao, a student at University College London. My research focuses on LLM agents, world model, and reinforcement learning. I have published papers on object detection and novel devices for HCI. Currently, I am working on Building *China’s Foundational Biological Brain-Computer Interface Database* and Exploring *Next-Generation BCI* Technologies.
 
-My research outputs have accumulated a total of <a href='https://scholar.google.com/citations?user=gGhv_kQAAAAJ'><strong><span id='total_cit'>several</span></strong></a> Google Scholar citations.
+My research outputs have accumulated a total of <a href='https://scholar.google.com/citations?user=gGhv_kQAAAAJ'><strong><span id='total_cit'>several</span></strong> Google Scholar</a> citations.
 <!--<strong><span id='total_cit'>several</span></strong></a>-->
 
 # 🔥 News
@@ -60,7 +60,7 @@ A research resource for dynamic hand-gesture recognition, captured with compleme
 # 📖 Educations
 - <img src="images/ucl.svg" style="width: 30px; vertical-align: middle;"> &#124; *2026.09 - present*, University College London, MSc in Artificial Intelligence and Medical Imaging
 - <img src="images/nuist.svg" style="width: 30px; vertical-align: middle;"> &#124; *2022.09 - 2026.06*, Nanjing University of Information Science and Technology, BE in Artificial Intelligence
-- <img src="images/setu.svg" style="width: 30px; vertical-align: middle;"> &#124; *2022.09 - 2026.06*, South East Technological University, BS in Applied Computing
+- <img src="images/setu.svg" style="width: 30px; vertical-align: middle;"> &#124; *2022.09 - 2026.06*, South East Technological University, BS in Applied Computing (First-class honours)
 
 # 💻 Internships
 - <img src="images/suat.svg" style="width: 30px; vertical-align: middle;"> &#124; *2025.06 - present*, Visiting Student, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
@@ -73,5 +73,6 @@ A research resource for dynamic hand-gesture recognition, captured with compleme
 
 # 🎖 Honors and Awards
 - *2024.06* Certified Information Security Professional - Penetration Test Engineer 
-- *2024* 2nd Prize - Nanjing University of Information Science and Technology School Scholarship
 - *2024* 1st Prize - China International College Students' Innovation Competition
+- *2026.06* 1nd Prize - Nanjing University of Information Science and Technology School Scholarship
+- *2026.06* Outstanding Graduate of Nanjing University of Information Science and Technology
