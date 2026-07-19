@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Peizhe Zhao (赵培喆)"
-description              : "Focusing on deep learning, pre-trained models and brain-computer interfaces."
+description              : "Focusing on LLM agents, world model, and reinforcement learning."
 repository               : "PeizheZhao/peizhezhao.github.io"
 google_scholar_stats_use_cdn : False
 
