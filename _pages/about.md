@@ -23,10 +23,8 @@ My research outputs have accumulated a total of <a href='https://scholar.google.
 <!--<strong><span id='total_cit'>several</span></strong></a>-->
 
 # 🔥 News
-- *2025.10*: &nbsp;🎉🎉🎉 Paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" has been accepted by 2025 IEEE International Conference on Big Data (CCF-C)
-- *2025.10*: &nbsp;🎉 Presented conference paper at ACAIB 2025
-- *2025.02*: &nbsp;🎉 Submit paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" on arXiv
-- *2024.10*: &nbsp;🎉 Presented conference paper at ICBAIE 2024 as Student Delegate
+- *2026.07*: &nbsp;🎉🎉🎉 EgoWrist-Gesture30 dataset has been released
+- *2025.10*: &nbsp;🎉 Paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" has been accepted by 2025 IEEE International Conference on Big Data (CCF-C)
 
 # 📝 Publications 
 
