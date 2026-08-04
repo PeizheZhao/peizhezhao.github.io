@@ -64,6 +64,7 @@ A research resource for dynamic hand-gesture recognition, captured with compleme
 - <img src="images/suat.svg" style="width: 30px; vertical-align: middle;"> &#124; *2025.06 - present*, Visiting Student, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
 
 # 💬 Academic Services
+- *2026.08-2027.02*, Program Committee Member for the Full Paper Track of the 20th ACM International Conference on Web Search and Data Mining (WSDM 2027)
 - *2025.07-2025.08*, Program Committee Member for 22th Pacific Rim International Conference on Artificial Intelligence (PRICAI 2025)
 - *2025.07-2025.08*, Program Committee Member for 6th International Conference on Machine Learning Techniques and Data Science (MLDS 2025)
 - *2025.04-2025.05*, Reviewer for 34th International Conference on Artificial Neural Networks (ICANN 2025)
