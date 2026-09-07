@@ -1,0 +1,35 @@
+{
+  "container_type": "Author",
+  "filled": [
+    "basics",
+    "indices",
+    "counts",
+    "publications"
+  ],
+  "scholar_id": "gGhv_kQAAAAJ",
+  "source": "AUTHOR_PROFILE_PAGE",
+  "name": "Peizhe Zhao",
+  "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=gGhv_kQAAAAJ&citpid=31",
+  "affiliation": "University College London",
+  "organization": 7707954445345430443,
+  "interests": [
+    "Deep Learning",
+    "Machine Learning",
+    "Object Detection",
+    "Action Detection"
+  ],
+  "email_domain": "@ucl.ac.uk",
+  "homepage": "https://peizhezhao.github.io/",
+  "citedby": 18,
+  "citedby5y": 18,
+  "hindex": 2,
+  "hindex5y": 2,
+  "i10index": 1,
+  "i10index5y": 1,
+  "cites_per_year": {
+    "2025": 10,
+    "2026": 7
+  },
+  "publications": {},
+  "updated": "2026-09-07 14:06:50.075397"
+}
