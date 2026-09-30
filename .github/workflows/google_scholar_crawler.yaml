@@ -8,19 +8,19 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 8 # 设置超时保护，防止死锁浪费额度
     
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v4 # 1. 升级到最新 v4，彻底解决卡住问题
+      uses: actions/checkout@v5
       with:
         fetch-depth: 1        # 2. 开启浅克隆，加快速度
 
     - name: Set up Python
-      uses: actions/setup-python@v5 # 3. 官方标准做法：用标准 Action 初始化 Python
+      uses: actions/setup-python@v6
       with:
-        python-version: '3.x'
+        python-version: '3.12'
 
     - name: Run Crawler
       run: |
