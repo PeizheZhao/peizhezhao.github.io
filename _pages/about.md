@@ -84,7 +84,8 @@ A research resource for dynamic hand-gesture recognition, captured with compleme
 - <img src="images/setu.svg" style="width: 30px; vertical-align: middle;"> &#124; *2022.09 - 2026.06*, South East Technological University, BS in Applied Computing (First-class honours)
 
 # 💻 Internships
-- <img src="images/suat.svg" style="width: 30px; vertical-align: middle;"> &#124; *2025.06 - present*, Visiting Student, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
+- <img src="images/suat.svg" style="width: 30px; vertical-align: middle;"> &#124; *2025.06 - present*, Independent Research Intern
+, <a href="https://www.x-mol.com/groups/liao_caizhi/people/98258">Shenzhen University of Advanced Technology (Advanced Bioelectronics Laboratory)<a>
 
 # 💬 Academic Services
 - *2026.08-2027.02*, Program Committee Member for the Full Paper Track of the 20th ACM International Conference on Web Search and Data Mining (WSDM 2027)
