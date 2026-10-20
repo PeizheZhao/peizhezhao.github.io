@@ -28,10 +28,19 @@ My research outputs have accumulated a total of <a href='https://scholar.google.
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TMI 2026</div><img src="images/tsmca_net.png" alt="Overall framework of TSMCA-Net for cross-session EEG–fNIRS decoding" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[TSMCA-Net: A Multi-Granular Cross-Attention Framework for Cross-Session EEG–fNIRS Decoding](https://doi.org/10.1109/TMI.2026.3743615)
+
+Tao Zheng, Yongtao Zhou, Muzi Xu, Jiaqi Zhang, **Peizhe Zhao**, Qiang Yang, Caizhi Liao
+
+</div></div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">BigData 2025</div><img src="images/yolov11_fabric.png" alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.48550/arXiv.2502.01445)
+[SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.1109/BigData66926.2025.11402084)
 
 **Peizhe Zhao**, Shunbo Jia
 
@@ -40,6 +49,16 @@ My research outputs have accumulated a total of <a href='https://scholar.google.
 <ul>
   <li><code class="language-plaintext highlighter-rouge">ACAIB 2025</code> <a href="https://doi.org/10.1145/3760269.3760308">Tennis Match Prediction Model Based on Deep Learning and Multi-Source Information Fusion</a>, Tianyu Luo, <strong>Peizhe Zhao</strong>, Xu Cheng. </li>
   <li><code class="language-plaintext highlighter-rouge">CISCE 2024</code> <a href="https://doi.org/10.1109/CISCE62493.2024.10653354">Athlete Performance Analysis: Machine Learning for Predicting Tennis Player Scores</a>, <strong>Peizhe Zhao</strong>, Tianyu Luo, Pengfei Bi.</li>
+</ul>
+
+**Unpublished Manuscripts**
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">TNNLS · Under review</code> EgoWrist: Reliability-Aware and Biomechanically Grounded Dynamic Gesture Recognition. First author. Submitted to IEEE Transactions on Neural Networks and Learning Systems, Dec 2025.</li>
+  <li><code class="language-plaintext highlighter-rouge">TIM · Under revision</code> Cooperative Multi-Stage Fusion Network for Measuring Neurovascular Coupling via Heterogeneous EEG–fNIRS Fusion. Co-author. IEEE Transactions on Instrumentation and Measurement, Mar 2026.</li>
+  <li><code class="language-plaintext highlighter-rouge">IEEE Sensors Journal · Under review</code> Wrist-Worn Dynamic Gesture Recognition Based on Spectral-Statistical Prompting and Sensor-Aware Fusion. Co-author. Sep 2026.</li>
+  <li><code class="language-plaintext highlighter-rouge">ICLR 2027 · Under review</code> Data Consistency Reaches the Null Space. Co-author. Sep 2026.</li>
+  <li><code class="language-plaintext highlighter-rouge">TMI · Under review</code> NeuroHemoAlign: Reliability-Aware EEG–fNIRS Decoding Under Signal Degradation and Modality Absence. Co-author. IEEE Transactions on Medical Imaging, Aug 2026.</li>
 </ul>
 
 # 📊 Dataset
