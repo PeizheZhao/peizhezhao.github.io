@@ -35,6 +35,8 @@ My research outputs have accumulated a total of <a href='https://scholar.google.
 
 Tao Zheng, Yongtao Zhou, Muzi Xu, Jiaqi Zhang, **Peizhe Zhao**, Qiang Yang, Caizhi Liao
 
+*IEEE Transactions on Medical Imaging*, 2026
+
 </div></div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">BigData 2025</div><img src="images/yolov11_fabric.png" alt="sym" width="100%"></div></div>
@@ -43,6 +45,8 @@ Tao Zheng, Yongtao Zhou, Muzi Xu, Jiaqi Zhang, **Peizhe Zhao**, Qiang Yang, Caiz
 [SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection](https://doi.org/10.1109/BigData66926.2025.11402084)
 
 **Peizhe Zhao**, Shunbo Jia
+
+*2025 IEEE International Conference on Big Data*, 2025
 
 </div></div>
 
