@@ -23,6 +23,8 @@ My research outputs have accumulated a total of <a href='https://scholar.google.
 <!--<strong><span id='total_cit'>several</span></strong></a>-->
 
 # 🔥 News
+- *2026.10*: &nbsp;🎉 Paper "TSMCA-Net: A Multi-Granular Cross-Attention Framework for Cross-Session EEG–fNIRS Decoding" has been accepted by IEEE Transactions on Medical Imaging
+- *2026.09*: &nbsp;🎓 Started my MSc in Artificial Intelligence and Medical Imaging at University College London
 - *2026.07*: &nbsp;🎉🎉🎉 EgoWrist-Gesture30 dataset has been released
 - *2025.10*: &nbsp;🎉 Paper "SPFFNet: Strip Perception and Feature Fusion Spatial Pyramid Pooling for Fabric Defect Detection" has been accepted by 2025 IEEE International Conference on Big Data (CCF-C)
 
